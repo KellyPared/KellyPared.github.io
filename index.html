@@ -4,127 +4,188 @@
 
 <html lang="en-us">
 <head>
-  <meta charset="UTF-8">
-  <title>Basic CSS Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" media="screen">
 
-  <!-- Introducing the Style Tag! -->
-  <!-- ========================== -->
-
-  <!-- Now you can customize the look of your sites. Each rule in the style tag changes the appearance of elements matching the selector -->
-<style>
-  /*
-    NOTE: Commenting is a bit different in CSS. 
-    They start with forward-slash + asterisk 
-    and end with back-slash + asterisk.
-    */
-
-  /*  body */
-  body {
-    background-color: #c3d5f0;
-    background-image: url(images/bg.gif);
-    background-repeat: no-repeat;
-    background-position: left top;
-  }
-
-  /* h1 heading tag */
-  h1 {
-    /* Put a 15-pixel margin at the bottom of the heading. */
-    margin-bottom: 15px;
-    /* Change the size of your font to 60 pixels high. */
-    font-size: 60px;
-    /* This will color the heading font white. */
-    color: white;
-    /* Align the text to the center of its enclosing element (e.g. div). */
-    text-align: center;
-    /* Underline the text. */
-    text-decoration: underline;
-    /* The background of the heading element will now be black. */
-    text-align: center;
-    margin-top: 10px;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    font-size: 30px;
-    /* Give an element a solid border. */
-    border-bottom: thick double #32a1ce;;
-  }
-
-  /* h2 heading tags */
-  h2 {
-    /* Put a 15-pixel margin at the top of all h2 headings. */
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 40px;
-    text-align: center;
-  }
-
-  /* h3 heading tags */
-  h3 {
-    margin-top: 15px;
-    font-size: 20px;
-    text-align: left;
-  }
-
-  /* All img tags */
-  img {
-    /* 
-      Center a block element in the middle of its enclosing tag.
-      When you use the "auto" rule on both left and right margins, 
-      your browser will do the math necessary to center a block element.
-      */
-    margin-left: auto;
-    margin-right: auto;
-    /* Block display (more on this later) */
-    display: block;
-  }
-
-  /* All p tags */
-  p {
-    padding: 0 10px;
-    line-height: 1.8;
-    text-align: center;
-    font-size: 20px;
-    /* Bold the text. */
-    font-weight: normal;
-  }
-
-  /* All unordered list tags */
-  ul {
-    text-align: center;
-    margin-top: 10px;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    font-size: 30px;
-    /* Give an element a solid border. */
-    border-bottom: thick double #32a1ce;;
-    /* Render the border 5 pixels thick. */
-    border-width: 5px;
-    /* Include bullets in the content flow. */
-    /* More info here: http://www.w3schools.com/cssref/pr_list-style-position.asp */
-    list-style-position: inside;
-  }
-</style>
 </head>
-
 <body>
+  <body data-new-gr-c-s-check-loaded="14.1101.0" data-gr-ext-installed="">
+    
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Project Webpages</font></font></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navigation switch">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href=href="https://twitter.com/home"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Twitter</font></font></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/kelly-schuster-paredes-4b887264/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LinkedIn</font></font></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.teachingpython.fm/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Podcast</font></font></a>
+              </li>
+            </ul>
+            
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="research" aria-label="research">
+              <button class="btn btn-outline-success" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Email Me</font></font></button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      
+    
+      <!-- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Example title.</font></font></h1>
+                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Statistical studies, according to the American Language Association, indicate that the demand for Arabic increased by 126% in the United States of America alone between 2002 and 2009.</font></font></p>
+                <p><a class="btn btn-lg btn-primary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Register today</font></font></a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Another example address.</font></font></h1>
+                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">According to the British Council, teaching English in Britain contributes to boosting its economy by more than two billion pounds annually, and has provided more than 26,000 jobs.</font></font></p>
+                <p><a class="btn btn-lg btn-primary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">learn more</font></font></a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">One more for good measure.</font></font></h1>
+                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Statistics on the volume of language investment outside Britain vary from year to year, but the Executive Director of the British Council, Eddie Byers, believes that investment in English education abroad is not only calculated on the financial level, but also on the political level.</font></font></p>
+                <p><a class="btn btn-lg btn-primary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Browse the gallery</font></font></a></p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">the previous</font></font></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">the next</font></font></span>
+        </button>
+      </div> -->
+    
+    
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+    
+      <div class="container marketing">
+    
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          </div>
+          <div class="row">
+          <div class="col-lg-4">
 
-  <h1>Kelly Schuster-Paredes</h1>
-  <h2>Pythonista and Data Analyst</h2>
-  <h3></h3>
-  
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <h2 class="fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pythonista and Data Analyst</font></font></h2>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Teacher by day, budding data analyst by night and a Podcast host whenever I can find the time. Pythonista of five years, budding data analyst and always trying to learn more. I teach Computer Science to Middle School learners and am a technology integration specialist.</font></font></p>
+            <!-- <p><a class="btn btn-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">View details</font></font></a></p> -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <h2 class="fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Podcast</font></font></h2>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A podcast by Kelly Paredes and Sean Tibor about their adventures teaching middle school computer science, problem-solving, handling failure, frustration, and victory through the lens of the Python programming language.
 
-  <p>Teacher by day, budding data analyst by night and a Podcast host whenever I can find the time. 
-
-    Pythonista of five years, budding data analyst and always trying to learn more. I teach Computer Science to Middle School learners and am a technology integration specialist. </p>
-  <img src="../images/avatar.jpg" alt="Awesome" width="25%">
-
-  <h3>Menu Links</h3>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/kelly-schuster-paredes-4b887264/">LinkedIn</a></li>
-    <li><a href="https://www.teachingpython.fm/">Teaching Python Podcast</a></li>
-    <li><a href="https://twitter.com/home">Twitter</a></li>
-  </ul>
+              Kelly Paredes has taught all over the world and specializes in curriculum design and development. She currently teaches sixth and seventh-grade computer science at Pine Crest School in Fort Lauderdale, Florida. This is her fourth year using Python.
+              
+              Sean Tibor has worked in marketing and technical management roles selling toothpaste and toothbrushes, designing chemical inventory and tv media databases, enrolling online nursing students, and founding a digital marketing agency. This is his fourth year teaching Python to seventh and eighth-grade students at Pine Crest School in Fort Lauderdale, Florida.</font></font></p>
+            <!-- <p><a class="btn btn-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">View details</font></font></a></p> -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <h2 class="fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Life Long Learner</font></font></h2>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">One of the things that I realized as I was beginning to learn Python is that my strength as a teacher would come in very handy. A teacher’s “tool belt” is earned through years of grit, dedication, and intention. Teachers often don’t realize all the tools they have accumulated until there is a need. But we call upon these skills, not only for our students but also for self-guided/independent learning. My tools helped me identify and guide my Python learning journey. And being able to locate quality resources would prove to be critical to part of my success with coding.</font></font></p>
+            <!-- <p><a class="btn btn-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">View details</font></font></a></p> -->
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    
+    
+        <!-- START THE FEATURETTES -->
+<!--     
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Featured first title. </font></font><span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">It will blow your mind.</font></font></span></h2>
+            <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The human face is a complex and highly distinct part of the body. </font><font style="vertical-align: inherit;">In fact, it is one of the most complex signaling systems available to us; </font><font style="vertical-align: inherit;">It includes more than 40 structurally and functionally independent muscles, each of which can be operated independently of the other; </font><font style="vertical-align: inherit;">It is one of the strongest indicators of emotion.</font></font></p>
+          </div>
+          <div class="col-md-5">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Oh yeah, that's good. </font></font><span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">See for yourself.</font></font></span></h2>
+            <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">When we laugh or cry, we project our emotions, allowing others to peek into our minds as they "read" our faces based on changes in key facial components such as the eyes, eyebrows, eyelids, nose, and lips.</font></font></p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+          </div>
+        </div> -->
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">And finally, this is me. </font></font><span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></span></h2>
+            <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kelly Schuster-Paredes is a mom, world traveler and a netizen. She loves learning about cultures and her children were born on two different continents. Kelly has a Masters in Curriculum, Instruction, and Technology from Nova Southeastern University. She has taught in London, Lima and USA and specializes in curriculum design, coaching and development. She got started with integrating technology in the classroom in 2003 and dabbled with app design in File Maker, HTML and Robotics. She currently teaches sixth, seventh and eighth grade computer science at Pine Crest School in Fort Lauderdale, Florida. This is her fifth year using Python.</font></font></p>
+          </div>
+          <div class="col-md-5">
+            <img src="../images/avatar.jpg" width="400" height="500" 
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <!-- /END THE FEATURETTES -->
+    
+      </div><!-- /.container -->
+    
+    
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go back to the top</font></font></a></p>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© Powered by BootStrap. </font><font style="vertical-align: inherit;">· </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> · </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></a></p>
+      </footer>
+    </main>
+    
+    
+        <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+ 
+</div>
 
 </body>
 
